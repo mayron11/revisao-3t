@@ -44,9 +44,18 @@ h3 {
     border-color: rgb(211, 20, 20);
  
   }
-  #el
-  width: 50%;
-  margin-left: 20%;
+      #el {
+        width: 50%;
+        margin-left: 20%;
   border-style: groove;
   border-width: 75%;
   border-color: black;
+
+      }
+      h1{
+        color: rgb(0, 0, 0);
+      }
+    
+
+
+  
