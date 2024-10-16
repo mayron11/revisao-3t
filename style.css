@@ -1,70 +1,137 @@
-/* Estilos básicos */
-body {
-  font-family: Arial, sans-serif;
+/* Reset básico para garantir consistência entre navegadores */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  box-sizing: border-box;
 }
 
+/* Estilos básicos do corpo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Estilos do Header */
 header {
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-h1, h2 {
-  color: #333;
+header .titulo h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
-p {
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
   font-size: 1rem;
-  line-height: 1.5;
-  margin: 20px;
-  text-align: justify;
+  transition: color 0.3s ease;
 }
 
-/* Seções de séries e filmes */
-.serie, .filme {
+nav ul li a:hover {
+  color: #ff6347;
+}
+
+/* Estilos do Main */
+main {
+  padding: 20px;
+}
+
+section {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px;
+  margin: 20px auto;
+  max-width: 800px;
   padding: 20px;
 }
 
-.serie img, .filme img {
+section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+section img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto 20px;
-}
-
-/* Títulos de seções */
-h2 {
-  text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-/* Estilo de imagens */
-#breaking, #dexter, #elc {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+section p {
+  text-align: justify;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Estilos do Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer .social a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: opacity 0.3s ease;
+}
+
+footer .social a img {
+  width: 24px;
+  height: 24px;
+}
+
+footer .social a:hover {
+  opacity: 0.7;
+}
+
 /* Layout Responsivo */
-@media screen and (max-width: 768px) {
-  body {
-      padding: 10px;
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      gap: 10px;
   }
 
-  .serie, .filme {
+  header .titulo h1 {
+      font-size: 1.5rem;
+  }
+
+  section {
       margin: 10px;
+      padding: 15px;
   }
 
-  p {
-      font-size: 2.0rem;
+  section h2 {
+      font-size: 1.5rem;
+  }
+
+  section p {
+      font-size: 0.95rem;
   }
 }
