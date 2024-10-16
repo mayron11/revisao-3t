@@ -16,7 +16,7 @@ body{
  #breaking
  {
      width: 50%;
-    margin-left: 20%;
+  
     border-style: double;
     border-width: 75%;
     border-color: black;
@@ -24,7 +24,7 @@ body{
  
  #dexter {
      width: 50%;
-     margin-left: 20%;
+     
      border-style: double;
      border-width: 10%;
      border-color: black;
