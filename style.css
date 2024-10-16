@@ -93,22 +93,7 @@ footer {
 }
 
 footer p {
-  margin-bottom: 10px;
-}
-
-footer .social a {
-  margin: 0 10px;
-  display: inline-block;
-  transition: opacity 0.3s ease;
-}
-
-footer .social a img {
-  width: 24px;
-  height: 24px;
-}
-
-footer .social a:hover {
-  opacity: 0.7;
+  margin-bottom: 0;
 }
 
 /* Layout Responsivo */
